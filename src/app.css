@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    min-height: 100vh;
+
+    background-color: black;
+    color: rgb(181, 255, 70);
+    font-family: 'VT323', monospace;
+
+    background: rgb(24,24,24);
+    background: -moz-linear-gradient(133deg, rgba(24,24,24,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(133deg, rgba(24,24,24,1) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(133deg, rgba(24,24,24,1) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#181818",endColorstr="#000000",GradientType=1);
+}
+
+input {
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(20, 20, 20);
+}
+input:focus {
+    background-color: rgb(12, 12, 12);
+}
+label {
+    margin-right: 10px;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 3px;
+}
+button:hover {
+    background-color: rgb(181, 255, 70);
+    color: black;
+}
+
+.input-wrapper {
+    margin-bottom: 10px;
+}
+
+#generator {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px 0px;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: solid 1px rgb(181, 255, 70);
+    box-shadow: 10px 10px 0px -2px rgb(181, 255, 70);
+    -webkit-box-shadow: 10px 10px 0px -2px rgb(181, 255, 70);
+    -moz-box-shadow: 10px 10px 0px -2px rgb(181, 255, 70);
+}
+
+#language-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.lang-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: solid white 1px; */
+    padding: 2px 5px;
+    margin-right: 12px;
+}
+.lang-item > p {
+    padding-right: 10px;
+}
+
+#generate-button {
+    margin-top: 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.problem-item {
+    padding: 10px
+}
+.problem-item-top {
+    display: flex;
+    flex-direction: row;
+}
